@@ -37,7 +37,7 @@ a {
 }
 
 a:hover {
-    color: #7d6fc4;
+    color: #7d46fc;
     text-decoration: none;
     font-size: 22px;
 }
@@ -61,3 +61,4 @@ h1 {
     font-size: 40px;
     text-align: left;
 }
+
