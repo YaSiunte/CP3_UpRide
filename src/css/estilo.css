@@ -206,3 +206,90 @@ footer h4{
     font-size: 16px;
     margin: 0;
 }
+
+/* ---------------- SOBRE ---------------- */
+
+.sobre{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 80px;
+
+    padding: 100px 80px;
+
+    flex-wrap: wrap;
+}
+
+.sobre-texto{
+
+    max-width: 600px;
+}
+
+.sobre-texto h2{
+
+    text-align: left;
+
+    margin-bottom: 40px;
+}
+
+.sobre-texto p{
+
+    color: #cfcfcf;
+
+    line-height: 35px;
+
+    margin-bottom: 30px;
+
+    font-size: 18px;
+}
+
+.sobre-img img{
+
+    width: 500px;
+
+    border-radius: 20px;
+
+    border: 2px solid #3a3a3a;
+}
+
+/* ---------------- VANTAGENS ---------------- */
+
+.vantagens{
+
+    padding: 50px 80px 120px 80px;
+}
+
+.cards-vantagens{
+
+    display: flex;
+    justify-content: center;
+
+    gap: 40px;
+
+    flex-wrap: wrap;
+}
+
+.vantagem{
+
+    width: 280px;
+
+    border: 1px solid #3a3a3a;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    text-align: center;
+}
+
+.vantagem h3{
+    color: #758ee0;
+    margin-bottom: 20px;
+}
+
+.vantagem p {
+    color: #cfcfcf;
+    line-height: 30px;
+}
