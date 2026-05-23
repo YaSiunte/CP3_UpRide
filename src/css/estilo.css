@@ -136,3 +136,73 @@ button:active{
     transform: scale(0.95);
 }
 
+footer{
+    background-color: #050505;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 60px 50px;
+    color: #bdbdbd;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    border-top: 1px solid #777;
+}
+
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-logo img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer-logo h3{
+    color: #d83935;
+    font-size: 28px;
+    margin: 0 0 10px 0;
+}
+
+.footer-logo p{
+    color: #bdbdbd;
+    font-size: 16px;
+    margin: 0;
+}
+
+.footer-links,
+.footer-contato,
+.footer-social{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+}
+
+footer h4{
+    font-size: 22px;
+    margin: 0 0 35px 0;
+    color: #fff;
+}
+
+.footer-links a{
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    color: #bdbdbd;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.footer-links a:hover{
+    color: #d83935;
+}
+
+.footer-contato p,
+.footer-social p{
+    font-size: 16px;
+    margin: 0;
+}
