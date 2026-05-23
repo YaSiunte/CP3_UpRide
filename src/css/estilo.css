@@ -125,7 +125,6 @@ h2{
     border-radius: 5px;
     font-size: 15px;
     cursor: pointer;
-    font-family:Quicksand;
     font-family: 'Michroma', sans-serif;
 }
 
@@ -136,3 +135,4 @@ button:focus{
 button:active{
     transform: scale(0.95);
 }
+
