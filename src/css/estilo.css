@@ -276,3 +276,227 @@ footer h4{
     line-height: 30px;
 }
 
+/* ── CARRINHO ── */
+.carrinho-container {
+    max-width: 900px;
+    margin: 60px auto 100px auto;
+    padding: 0 30px;
+}
+
+.carrinho-container h1 {
+    color: #d83935;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.carrinho-subtitulo {
+    color: #555;
+    font-size: 13px;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #1a1a1a;
+    padding-bottom: 20px;
+}
+
+#lista-carrinho {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.item-carrinho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0a0a0a;
+    border: 1px solid #1f1f1f;
+    border-left: 3px solid #d83935;
+    border-radius: 8px;
+    padding: 20px 28px;
+    transition: border-color 0.3s;
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.item-carrinho:hover {
+    border-color: #758ee0;
+    border-left-color: #758ee0;
+}
+
+.item-nome {
+    color: #fff;
+    font-size: 17px;
+    flex: 1;
+}
+
+.item-preco {
+    color: #d83935;
+    font-size: 17px;
+    width: 160px;
+    text-align: right;
+}
+
+.item-quantidade {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 120px;
+    justify-content: center;
+}
+
+.item-quantidade button {
+    background: none;
+    border: 1px solid #333;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: 'Michroma', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: all 0.2s;
+    line-height: 1;
+}
+
+.item-quantidade button:hover {
+    background-color: #d83935;
+    border-color: #d83935;
+}
+
+.item-quantidade button:active {
+    transform: scale(0.9);
+}
+
+.item-quantidade span {
+    color: #fff;
+    font-size: 16px;
+    min-width: 20px;
+    text-align: center;
+}
+
+.btn-remover {
+    background: none;
+    border: none;
+    color: #444;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0 0 0 20px;
+    transition: color 0.2s;
+    font-family: 'Michroma', sans-serif;
+    line-height: 1;
+}
+
+.btn-remover:hover {
+    color: #d83935;
+}
+
+.carrinho-vazio {
+    text-align: center;
+    padding: 80px 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.carrinho-vazio.visivel {
+    display: flex;
+}
+
+.carrinho-vazio .icone {
+    font-size: 60px;
+    opacity: 0.2;
+}
+
+.carrinho-vazio p {
+    color: #444;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.carrinho-vazio a {
+    margin: 0;
+    padding: 12px 30px;
+    border: 1px solid #d83935;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #d83935;
+    letter-spacing: 1px;
+}
+
+.carrinho-vazio a::after { display: none; }
+
+.carrinho-vazio a:hover {
+    background-color: #d83935;
+    color: #fff;
+    font-size: 14px;
+}
+
+.resumo {
+    margin-top: 40px;
+    background-color: #0a0a0a;
+    border: 1px solid #1f1f1f;
+    border-radius: 8px;
+    padding: 28px 32px;
+}
+
+.resumo-linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #141414;
+    font-size: 14px;
+    color: #888;
+}
+
+.resumo-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    margin-top: 10px;
+}
+
+.resumo-total span:first-child {
+    color: #fff;
+    font-size: 18px;
+}
+
+.resumo-total span:last-child {
+    color: #d83935;
+    font-size: 26px;
+}
+
+.btn-finalizar {
+    width: 100%;
+    margin-top: 28px;
+    background-color: #d83935;
+    color: #fff;
+    border: none;
+    padding: 16px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: 'Michroma', sans-serif;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+}
+
+.btn-finalizar:hover {
+    background-color: #758ee0;
+}
+
+.btn-finalizar:active {
+    transform: scale(0.98);
+}
+
