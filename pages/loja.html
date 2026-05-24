@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/css/estilo.css">
+</head>
+<body>
+
+    <header>
+        <h1>UpRide</h1>
+        <nav>
+            <div class="menu">
+                <a href="../index.html">
+                    Início
+                </a>
+
+                <a href="sobre.html">
+                    Sobre a loja
+                </a>
+
+                <a href="loja.html">
+                    Carrinho
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="carrinho-container">
+        <h1>Carrinho</h1>
+        <p class="carrinho-subtitulo">Itens selecionados</p>
+
+        <div id="lista-carrinho"></div>
+
+        <div class="carrinho-vazio" id="carrinho-vazio">
+            <p>Seu carrinho está vazio</p>
+            <a href="../index.html">Ver motos</a>
+        </div>
+
+        <div class="resumo" id="resumo">
+            <div class="resumo-linha">
+                <span>Itens</span>
+                <span id="total-itens">0</span>
+            </div>
+            <div class="resumo-total">
+                <span>Total</span>
+                <span id="total-preco">R$ 0,00</span>
+            </div>
+            <button class="btn-finalizar" onclick="finalizar()">FINALIZAR PEDIDO</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-logo">
+            <img src="../src/assets/img/banner.png"> 
+            <h3>UpRide</h3>
+            <p>Ride Your Future.</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Mapa do site</h4>
+
+            <a href="../index.html">Início</a>
+            <a href="sobre.html">Sobre a loja</a>
+            <a href="loja.html">Carrinho</a>
+        </div>
+
+        <div class="footer-contato">
+            <h4>Contato e suporte</h4>
+
+            <p>(11) 99999-9999</p>
+            <p>contato@upride.com</p>   
+            <p>Dúvidas frequentes</p>
+            <p>Financiamentos</p>
+        </div>
+
+        <div class="footer-social">
+            <h4>Redes Sociais</h4>
+
+            <p>Instagram: @upride</p>
+            <p>Twitter: @uprideOficial</p>
+            <p>Youtube: UpRide Brasil</p>
+        </div>
+    </footer>
+
+    <script src="../src/js/script.js"></script>
+
+</body>
+</html>
